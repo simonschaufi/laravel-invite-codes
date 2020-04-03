@@ -8,7 +8,10 @@ use Junges\InviteCodes\Events\InviteRedeemedEvent;
 
 class InviteCodesEventServiceProvider extends ServiceProvider
 {
-    public array $listen = [
+    /**
+     * @var array 
+     */
+    public $listen = [
         InviteCreatedEvent::class => [
 
         ],

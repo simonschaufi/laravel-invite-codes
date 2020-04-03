@@ -11,7 +11,10 @@ class InviteRedeemedEvent
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public Invite $invite;
+    /**
+     * @var Invite 
+     */
+    public $invite;
 
     /**
      * Create a new event instance.

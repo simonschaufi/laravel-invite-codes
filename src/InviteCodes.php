@@ -22,7 +22,10 @@ use Symfony\Component\HttpFoundation\Response;
 
 class InviteCodes implements InviteCodesContract
 {
-    protected int $max_usages;
+    /**
+     * @var int
+     */
+    protected $max_usages;
     protected $to;
     protected $expires_at;
     protected $dispatch_events = true;
